@@ -1,6 +1,0 @@
-/Users/rumen/Downloads/TodoListManagerJPA_Docker/src/main/java/com/myjavablog/springboot/TodoManagerApplication.java
-/Users/rumen/Downloads/TodoListManagerJPA_Docker/src/main/java/com/myjavablog/springboot/pojo/Task.java
-/Users/rumen/Downloads/TodoListManagerJPA_Docker/src/main/java/com/myjavablog/springboot/repository/TodoRepository.java
-/Users/rumen/Downloads/TodoListManagerJPA_Docker/src/main/java/com/myjavablog/springboot/exception/ResourceNotFoundException.java
-/Users/rumen/Downloads/TodoListManagerJPA_Docker/src/main/java/com/myjavablog/springboot/controller/HomeController.java
-/Users/rumen/Downloads/TodoListManagerJPA_Docker/src/main/java/com/myjavablog/springboot/controller/TodoController.java

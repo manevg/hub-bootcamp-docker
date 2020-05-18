@@ -1,6 +1,0 @@
-com/myjavablog/springboot/pojo/Task.class
-com/myjavablog/springboot/repository/TodoRepository.class
-com/myjavablog/springboot/TodoManagerApplication.class
-com/myjavablog/springboot/controller/TodoController.class
-com/myjavablog/springboot/controller/HomeController.class
-com/myjavablog/springboot/exception/ResourceNotFoundException.class
