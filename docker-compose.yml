@@ -1,0 +1,30 @@
+version: '3'
+services:
+  mysql-server:
+    restart: always
+    healthcheck:
+      test: "/usr/bin/mysql --user=test --password=test --execute \"SHOW DATABASES;\""
+      interval: 3s
+      timeout: 1s
+      retries: 5
+    image: mysql
+    container_name: mysql-db
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
+      MYSQL_DATABASE: testdb
+    ports:
+      - "3306:3306"
+  task-app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    links:
+       - mysql-server
+    depends_on:
+      - mysql-server
